@@ -1,0 +1,12 @@
+BEGIN TRANSACTION;
+CREATE TABLE IF NOT EXISTS dialogue (
+	id INTEGER PRIMARY KEY,
+	tag TEXT NOT NULL,
+	text TEXT NOT NULL,
+	question TEXT,
+	branches JSON NOT NULL
+);
+
+
+COMMIT;
+	
