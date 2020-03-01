@@ -11,10 +11,14 @@
       "have an itch. That was no longer your world.",
       "The world you saw is only the tip of a needle - there was much and much more to be explored."
    ],
-   "branches":[
-      "1 - A swordsman",
-      "2 - A bow",
-      "3 - An axe"
-   ]
+   "question":[
+      "As a kid, nobody could distinguish you as a male or female - your androgenous appeareance never gave away",
+      "your real gender.",
+      "Err, what was it now?"
+   ],
+   "branches": {
+      "1 - A man" : "man",
+      "2 - A woman" : "woman"
+   }
 }
 

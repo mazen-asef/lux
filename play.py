@@ -1,6 +1,8 @@
 import json
 import time
 
+STANDARD_WAIT_TIME = 0
+
 def wait ():
     while True:
         """
@@ -12,16 +14,20 @@ def wait ():
         key = input ()
         if not key:
             break
+
 def show_history_branches (conversation):
-    for p in conversation['branches']:
+    for p in conversation['question']:
          print (p)
+    branches = conversation['branches']
+    for p in branches:
+        print(p)
     
 def main ():
     with open ('story/eden.json') as json_file:
         data = json.load (json_file)
         for p in data['intro']:
             print (p)
-            time.sleep (3)
+            time.sleep (STANDARD_WAIT_TIME)
         wait ()
         show_history_branches (data)
         wait ()
